@@ -26,11 +26,11 @@ class CardController extends Controller
         $card = new Card;
         $card->folder_id = $request->input('folder_id', 0);
         $card->title_cd = $request->input('title_cd', null);
-        $card->card_no = $request->input('cardNo', null);
-        $card->symbol_cd = $request->input('symbolCd', null);
-        $card->rarity_cd = $request->input('rarityCd', null);
+        $card->card_no = $request->input('card_no', null);
+        $card->symbol_cd = $request->input('symbol_cd', null);
+        $card->rarity_cd = $request->input('rarity_cd', null);
         $card->name = $request->input('name','');
-        $card->get_flg = $request->input('getFlg', false);
+        $card->get_flg = $request->input('get_flg', false);
 
         $amount = $request->input('amount', 0);
         $card->amount = $amount ? $amount : 0;
